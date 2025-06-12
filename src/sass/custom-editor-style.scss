@@ -1,4 +1,6 @@
-//Add your own editor styles here or import additional files
+// 
+// ag: ADD STYLES HERE FOR BACKEND EDITOR OR IMPORT ADDITIONAL FILES
+//
 
 // Grab our child theme variables
 @import "theme/child_theme_variables";
@@ -34,4 +36,11 @@
 .editor-post-title .editor-post-title__input{
 	font-size: $h1-font-size;
 	font-weight: $headings-font-weight;
+}
+
+// ag: to remove the page title heading from the editor view
+.editor-visual-editor__post-title-wrapper{
+	h1{
+		display: none;
+	}
 }
