@@ -1,0 +1,155 @@
+
+// ag: styling for the home page which has a page id of 6
+.page-id-6 {
+
+  // ag: h2 title over the home page slide
+  h2.awd-hero-slider-content-heading{
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 120%;
+  }
+
+  p.awd-hero-slider-content-body{
+    color: #fff;
+    font-size: 2.3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200;
+    line-height: 120%;
+  }
+
+  #wrapper-navbar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+  }
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+
+  #full-width-page-wrapper{
+    padding: 0;
+  }
+  .awd-hero-slider-dots{
+    bottom: 10rem !important;
+    top: 85%;
+    z-index: 999;
+  }
+
+  // ag: to move the footer to overlay on the slide of the home page
+  #wrapper-footer{
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+    background: transparent;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .awd-hero-slider-cta-text-button{
+    background-color: $accent;
+    &:hover{
+      background-color: darken($accent, 5%);
+      color: white;
+    }
+  }
+
+  .awd-hero-slider-slide-overlay{
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.22); 
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .overlap-footer {
+      bottom: 10px;
+      font-size: 0.75rem;
+    }
+  }
+
+  // ag: nav menu styling for the homepage
+  .navbar-nav .nav-item .nav-link {
+    color: #fff; 
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 1.25rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  span.site-title{
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+    font-weight: bold;
+  }
+
+
+  // .awd-hero-slider-wrapper {
+  //   position: relative;
+  //   overflow: hidden;
+  // }  
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none; // prevent hidden slide interaction
+    z-index: 0;
+  }
+
+  .slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+  }
+
+  // ************************************************************** mobile styliing *******************************************************
+  @media(max-width: 768px){
+    h2.awd-hero-slider-content-heading{
+      font-size: 1.95rem;
+      width: 100%;
+    }
+
+    p.awd-hero-slider-content-body{
+      font-size: 1.2rem;
+      width: 95%;
+    }
+
+    .awd-hero-slider-prev-slide-btn{
+      padding: .5rem 0;
+      font-size: 2rem;
+    }
+
+    .awd-hero-slider-next-slide-btn{
+      padding: .5rem 0;
+      font-size: 2rem;
+    }
+
+    .awd-hero-slider-cta-text-button{
+      top: 70%;
+    }
+
+    .awd-hero-slider-dots{
+      top: 80%;
+    }
+
+  }  
+
+} // end of page-6/home-page styling
+
+

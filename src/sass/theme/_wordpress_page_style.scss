@@ -1,0 +1,99 @@
+
+
+// ag: *********************************************************** styling for the wordpress page ************************************************************
+.page-id-166{
+  #wrapper-navbar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+  }
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+
+  #full-width-page-wrapper{
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #fff; 
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 1.25rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .wordpress-development-page-img > img{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  span.site-title{
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .wordpress-development-page-header{
+    max-width: 100%;
+    color: $secondary;
+  }
+  // ag: gradiant background for background on the wordpress page
+  .wordpress-development-page-info-first-section{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wordpress-development-page-info-first-section {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: url("data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>\
+      <defs>\
+      <linearGradient id='grad1' x1='0%' y1='0%' x2='0%' y2='100%'>\
+      <stop offset='0%' stop-color='%2300CCFF' stop-opacity='1'/>\
+      <stop offset='100%' stop-color='%2300CCFF' stop-opacity='0'/>\
+      </linearGradient>\
+      </defs>\
+      <path fill='url(%23grad1)' d='M0,160 C360,320 1080,0 1440,160 L1440,320 L0,320 Z'/>\
+      </svg>") no-repeat bottom center;    
+    background-size: cover;
+    z-index: 0;
+    pointer-events: none;
+
+  }
+
+  .wordpress-development-page-info-second-section{
+    // position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // min-height: 25rem;
+    background: url("data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>\
+      <defs>\
+      <linearGradient id='grad1' x1='0%' y1='0%' x2='0%' y2='100%'>\
+      <stop offset='0%' stop-color='%2300CCFF' stop-opacity='0'/>\
+      <stop offset='100%' stop-color='%2300CCFF' stop-opacity='1'/>\
+      </linearGradient>\
+      </defs>\
+      <path fill='url(%23grad1)' d='M0,160 C360,320 1080,0 1440,160 L1440,0 L0,0 Z'/>\
+      </svg>") no-repeat top center;
+    background-size: cover;
+    z-index: 0;
+    pointer-events: none;    
+
+  }
+
+  .wordpress-development-page-align-content-center{
+    align-content: center;
+  }
+
+} // end of wordpress styling page specific

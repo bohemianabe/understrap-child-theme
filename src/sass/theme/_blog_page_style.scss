@@ -1,0 +1,21 @@
+
+
+// ag: styling for the main home blog page
+body.page-id-327{
+    .img-fluid{
+        height: 15rem;
+        object-fit: contain;
+    }
+
+    article{
+        h2{
+            font-size: 1.75rem;
+            a{
+                color: $secondary;
+            }
+        }
+    }
+    // .page-numbers.current{
+    //     color: $accent
+    // }
+}

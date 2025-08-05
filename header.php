@@ -33,19 +33,18 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 		</a>
 
-       
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
         <?php
-            // ag: added this so that the primary menu build in the wp backend will display here
-            wp_nav_menu([
-                'theme_location' => 'primary',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'navbarNavDropdown',
-                'menu_class'      => 'navbar-nav ml-auto',
-                'fallback_cb'     => '',
-                'menu_id'         => 'main-menu',
-            ]);
+			// ag: remove this. it's what gave me the duplicate menu on mobile dropdown
+            // wp_nav_menu([
+            //     'theme_location' => 'primary',
+            //     'container_class' => 'collapse navbar-collapse',
+            //     'container_id'    => 'navbarNavDropdown',
+            //     'menu_class'      => 'navbar-nav ml-auto',
+            //     'fallback_cb'     => '',
+            //     'menu_id'         => 'main-menu',
+            // ]);
         ?>
 
 	</header><!-- #wrapper-navbar -->

@@ -1,0 +1,18 @@
+
+.single-post{
+    // ag: removes the blog main image from the single blog post
+    img.attachment-large.size-large.wp-post-image{
+        display: none;
+    }
+
+    .blog-post-page-heading{
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    blockquote{
+        font-style: italic;
+        color: $accent;
+        font-size: .95rem;
+    }
+}

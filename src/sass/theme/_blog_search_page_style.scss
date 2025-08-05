@@ -1,0 +1,16 @@
+
+body.page-id-327{
+    a.understrap-read-more-link{
+        background-color: $accent;
+        border: $accent;
+        &:hover{
+            background-color: darken($accent, 5%);
+        }
+    } 
+    
+    @media(max-width: 768px){
+        main.site-main > div.container > div.row{
+            flex-direction: column-reverse;
+        }
+    }
+}

@@ -94,12 +94,14 @@ function understrap_child_customize_controls_js() {
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
 // ag: custom style.css in the home directory included here
-// Enqueue parent and child styles
-// function understrap_child_enqueue_styles() {
-//     wp_enqueue_style('understrap-parent-style', get_template_directory_uri() . '/style.css');
-//     wp_enqueue_style('understrap-child-style', get_stylesheet_directory_uri() . '/style.css', array('understrap-parent-style'));
-// }
-// add_action('wp_enqueue_scripts', 'understrap_child_enqueue_styles');
+function awd_custom_site_info() {
+    echo '&copy; ' . date('Y') . ' Abel Web Development. All rights reserved.';
+}
+
+function awd_custom_footer() {
+    add_action( 'understrap_site_info', 'awd_custom_site_info' );
+}
+add_action( 'init', 'awd_custom_footer' );
 
 function understrap_child_enqueue_styles() {
     // Load the parent theme's stylesheet
@@ -109,7 +111,6 @@ function understrap_child_enqueue_styles() {
     wp_enqueue_style('understrap-child-style', get_stylesheet_directory_uri() . '/css/child-theme.css', array('understrap-parent-style'), filemtime(get_stylesheet_directory() . '/css/child-theme.css'));
 }
 add_action('wp_enqueue_scripts', 'understrap_child_enqueue_styles');
-
 
 // ag: added theme support so that cutom gutenburg blocks can have all the editing features. It works in tandem with theme.json file
 add_theme_support( 'editor-styles' );

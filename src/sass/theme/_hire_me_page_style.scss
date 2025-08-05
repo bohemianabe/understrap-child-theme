@@ -1,0 +1,82 @@
+
+body.page-id-641{
+    h2{
+        color: #595959;
+    }
+    .text-underline{
+        text-decoration: underline;
+    }
+    h3{
+        color: $primary;
+    }
+
+    div#full-width-page-wrapper{
+        padding: 0;
+    }
+    header#wrapper-navbar{
+        display: none;
+    }
+
+    div#wrapper-footer{
+        background-color: $secondary;
+        color: white;
+        padding: 3rem;
+    }
+
+    .site-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-info{
+        align-content: center;
+        margin-left: 1rem;
+    }
+
+    .hire-me-footer-logo{
+        height: 3rem;
+    }
+
+    .hire-me-top-banner{
+        position: relative;
+    }
+
+    .head-shot-column-div{
+        position: relative;
+        margin-top: -5rem;
+        top: 40%;
+        width: 100%;
+    }
+
+    .hire-me-download-cv-link{
+        padding: .85rem;
+        font-size: 1.15rem;
+        a{
+            &:hover{
+                border-color: $accent;
+                color: $accent;
+                background-color: #f2f2f2;
+            }
+
+        }
+    }
+
+    .hire-me-self-img > img{
+        height: 10rem;
+        max-width: 10rem;
+        vertical-align: bottom;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    @media(max-width:760px){
+        .hire-me-download-cv-link{
+            text-align: right;
+        }
+        
+        .wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link{
+            width: 40%;
+        }
+
+    }
+}
