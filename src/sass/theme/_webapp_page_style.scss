@@ -94,4 +94,10 @@
     align-content: center;
   }
 
+  @media(max-width: 768px) {
+    .has-global-padding{
+      padding: 0;
+    }
+  }
+
 } // end of web app styling page specific

@@ -12,5 +12,15 @@ body.page-id-327{
         main.site-main > div.container > div.row{
             flex-direction: column-reverse;
         }
+
+        div#navbarNavDropdown > ul{
+            li{
+                a{
+                    text-shadow: none;
+                }
+            }
+        }
     }
+
+    
 }

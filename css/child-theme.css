@@ -15212,6 +15212,15 @@ aside#block-3 div > ul li a {
   .footer-links {
     padding: 0;
   }
+  div#navbarNavDropdown > ul {
+    background-color: #f2f2f2;
+    width: 40%;
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+  }
+  div#navbarNavDropdown > ul li a {
+    text-shadow: 1px 1px 2px #0a2540;
+  }
 }
 .page-id-6 h2.awd-hero-slider-content-heading, .page-id-6 .awd-hero-slider-content-heading.h2 {
   color: #fff;
@@ -15327,6 +15336,7 @@ aside#block-3 div > ul li a {
   }
   .page-id-6 .awd-hero-slider-cta-text-button {
     top: 70%;
+    padding: 0.25rem 0.5rem;
   }
   .page-id-6 .awd-hero-slider-dots {
     top: 80%;
@@ -15395,6 +15405,11 @@ aside#block-3 div > ul li a {
 .page-id-166 .wordpress-development-page-align-content-center {
   align-content: center;
 }
+@media (max-width: 768px) {
+  .page-id-166 .has-global-padding {
+    padding: 0;
+  }
+}
 
 .page-id-2 #wrapper-navbar {
   position: absolute;
@@ -15457,6 +15472,11 @@ aside#block-3 div > ul li a {
 }
 .page-id-2 .webapp-development-page-align-content-center {
   align-content: center;
+}
+@media (max-width: 768px) {
+  .page-id-2 .has-global-padding {
+    padding: 0;
+  }
 }
 
 .page-id-278 #wrapper-navbar {
@@ -15555,16 +15575,21 @@ aside#block-3 div > ul li a {
   font-size: 0.95rem;
 }
 
-body.page-id-327 .img-fluid {
+body.wp-singular.post-template-default.single.single-post .img-fluid {
   height: 15rem;
   -o-object-fit: contain;
   object-fit: contain;
 }
-body.page-id-327 article h2, body.page-id-327 article .h2 {
+body.wp-singular.post-template-default.single.single-post article h2, body.wp-singular.post-template-default.single.single-post article .h2 {
   font-size: 1.75rem;
 }
-body.page-id-327 article h2 a, body.page-id-327 article .h2 a {
+body.wp-singular.post-template-default.single.single-post article h2 a, body.wp-singular.post-template-default.single.single-post article .h2 a {
   color: #0a2540;
+}
+@media (max-width: 768px) {
+  body.wp-singular.post-template-default.single.single-post div#navbarNavDropdown > ul li a {
+    text-shadow: none;
+  }
 }
 
 body.page-id-327 a.understrap-read-more-link {
@@ -15577,6 +15602,9 @@ body.page-id-327 a.understrap-read-more-link:hover {
 @media (max-width: 768px) {
   body.page-id-327 main.site-main > div.container > div.row {
     flex-direction: column-reverse;
+  }
+  body.page-id-327 div#navbarNavDropdown > ul li a {
+    text-shadow: none;
   }
 }
 

@@ -1,7 +1,7 @@
 
 
-// ag: styling for the main home blog page
-body.page-id-327{
+// ag: styling for the individual blog pages
+body.wp-singular.post-template-default.single.single-post{
     .img-fluid{
         height: 15rem;
         object-fit: contain;
@@ -15,7 +15,16 @@ body.page-id-327{
             }
         }
     }
-    // .page-numbers.current{
-    //     color: $accent
-    // }
+
+    @media(max-width: 768px){
+
+        div#navbarNavDropdown > ul{
+            li{
+                a{
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+    
 }

@@ -271,4 +271,16 @@ aside#block-3{
   .footer-links{
     padding: 0;
   }
+
+  div#navbarNavDropdown > ul{
+    background-color: #f2f2f2;
+    width: 40%;
+    border-radius: 5px;
+    padding-bottom: .5rem;
+    li{
+      a{
+        text-shadow: 1px 1px 2px $secondary;
+      }
+    }
+  }
 }
