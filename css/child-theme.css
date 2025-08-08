@@ -15189,7 +15189,7 @@ aside#block-3 div > ul li a {
 }
 
 .navbar-toggler {
-  border-color: #FF6B6B;
+  border-color: #ff6b6b;
 }
 
 #navbarNavDropdown {
@@ -15214,7 +15214,7 @@ aside#block-3 div > ul li a {
   }
   div#navbarNavDropdown > ul {
     background-color: #f2f2f2;
-    width: 40%;
+    width: 30%;
     border-radius: 5px;
     padding-bottom: 0.5rem;
   }

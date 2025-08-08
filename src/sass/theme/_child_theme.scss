@@ -1,286 +1,281 @@
-
-// 
+//
 // ******************************************** global stylings for navbar and footer and body universal styling *********************************************************************************
 //
 
-
 body {
-  // font-family: "Cairo Regular", sans-serif;
-  font-family: "Libre Caslon Display", sans-serif;
-  font-size: 1.25rem;
-  color: #595959;
-  background-color: #f2f2f2;
-  h2{
-    color: $secondary;
-  }
+	// font-family: "Cairo Regular", sans-serif;
+	font-family: "Libre Caslon Display", sans-serif;
+	font-size: 1.25rem;
+	color: #595959;
+	background-color: #f2f2f2;
+	h2 {
+		color: $secondary;
+	}
 }
 
 // ag: this is for all the search input boxes to match the page off-white background color
-input#wp-block-search__input-1{
-    background-color: #f2f2f2;
+input#wp-block-search__input-1 {
+	background-color: #f2f2f2;
 }
 
 // ag: removes the auto added title WP adds to each page after the site title
 header.entry-header {
-    display: none;
+	display: none;
 }
 
-#main-nav{
-  padding-top: 2rem;
+#main-nav {
+	padding-top: 2rem;
 }
 
 // ag: nav menu styling for the site
 .navbar-nav .nav-item .nav-link {
-  color: $secondary; 
-  font-size: 1.25rem;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 2px; 
-  text-decoration: none;
-  font-weight: bold;
+	color: $secondary;
+	font-size: 1.25rem;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 2px;
+	text-decoration: none;
+	font-weight: bold;
 }
 
-span.site-title{
-  color: $secondary;
-  font-weight: bold;
+span.site-title {
+	color: $secondary;
+	font-weight: bold;
 }
-
-
 
 // ag: section for the nav-bar under-line animation ******************************************************
 .navbar-nav .nav-item .nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: $accent;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: $accent;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover::after,
 .navbar-nav .nav-item .nav-link:focus::after,
 .navbar-nav .current-menu-item .nav-link::after,
 .navbar-nav .current_page_item .nav-link::after {
-  transform: scaleX(1);
+	transform: scaleX(1);
 }
 
-.navbar-nav .menu-item{
-  margin-right: .5rem;
+.navbar-nav .menu-item {
+	margin-right: 0.5rem;
 }
 
-img.navbar-brand-img{
-  height: 5rem; 
-  width: auto; 
-  padding-right: 1rem;
+img.navbar-brand-img {
+	height: 5rem;
+	width: auto;
+	padding-right: 1rem;
 }
 // ag: end section for the nav-bar blue line animation ******************************************************
 
-
 // ************************************************************************************* ag: footer styling ***********************************************************************************
 // ag: footer nav link underline animation !
-.footer-links .nav-menu .menu-item{
-  position: relative;
+.footer-links .nav-menu .menu-item {
+	position: relative;
 }
-.footer-links .nav-menu .menu-item::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 40%;
-  background-color: $accent;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+.footer-links .nav-menu .menu-item::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 40%;
+	background-color: $accent;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease-in-out;
 }
 
 .footer-links .nav-menu .menu-item:hover::after,
-.footer-links .nav-menu .menu-item:focus:after{
-  transform: scaleX(1);
+.footer-links .nav-menu .menu-item:focus:after {
+	transform: scaleX(1);
 }
 
-#wrapper-footer{
-  font-size: .95rem;
+#wrapper-footer {
+	font-size: 0.95rem;
 }
 
 #site-footer {
-  color: white;
-  font-weight: bold;
+	color: white;
+	font-weight: bold;
 }
 
 .footer-top {
-  background-color: $secondary;
-  padding: 40px 0;
+	background-color: $secondary;
+	padding: 40px 0;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .footer-column {
-  flex: 1 1 220px;
-  margin: 10px 20px;
+	flex: 1 1 220px;
+	margin: 10px 20px;
 }
 
 .footer-column h4 {
-  color: #fff;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  text-align: center;
+	color: #fff;
+	margin-bottom: 2rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 .footer-checklist li,
 .footer-links li,
 .footer-posts li {
-  margin-bottom: 8px;
-  list-style: none;
+	margin-bottom: 8px;
+	list-style: none;
 }
 
 .footer-links a,
 .footer-posts a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .footer-bottom {
-  background-color: $primary;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  position: relative;
-  bottom: -40px;
+	background-color: $primary;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 0.9rem;
+	position: relative;
+	bottom: -40px;
 }
 
 .social-icons a {
-  color: white;
-  margin-left: 10px;
-  font-size: 1rem;
+	color: white;
+	margin-left: 10px;
+	font-size: 1rem;
 }
 
 // ag: the search button for all the blog post pages
-button.wp-block-search__button.btn.btn-primary.wp-element-button{
-  background-color: $accent;
-  color: white;
-  border-color: rgba(255, 255, 255, 0);
+button.wp-block-search__button.btn.btn-primary.wp-element-button {
+	background-color: $accent;
+	color: white;
+	border-color: rgba(255, 255, 255, 0);
 }
 
-aside#block-3{
-  margin-top: 2rem;
-  div > ul{
-    list-style: inside;
-    li {
-      margin-bottom: .45rem;
-      a{
-        text-decoration: none;
-      }
-    }
-  }
+aside#block-3 {
+	margin-top: 2rem;
+	div > ul {
+		list-style: inside;
+		li {
+			margin-bottom: 0.45rem;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
-.btn-tertiary{
-  background-color: $accent;
-  border-color: rgba(255, 255, 255, 0);
-  color: white;
-  padding: .35rem;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: .55rem;
-  &:hover{
-    background-color: darken($accent, 5%);
-    color: white !important;
-    border-color: rgba(255, 255, 255, 0);
-  }
+.btn-tertiary {
+	background-color: $accent;
+	border-color: rgba(255, 255, 255, 0);
+	color: white;
+	padding: 0.35rem;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	padding: 0.55rem;
+	&:hover {
+		background-color: darken($accent, 5%);
+		color: white !important;
+		border-color: rgba(255, 255, 255, 0);
+	}
 }
 
-.footer-column.latest-blog-posts{
-  div > a{
-    color: white;
-    text-decoration: none;
-  }
+.footer-column.latest-blog-posts {
+	div > a {
+		color: white;
+		text-decoration: none;
+	}
 }
 
 .footer-column.latest-blog-posts a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding-bottom: 2px;
+	position: relative;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding-bottom: 2px;
 }
 
 .footer-column.latest-blog-posts a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: $accent; /* Adjust to match your accent color */
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: $accent; /* Adjust to match your accent color */
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
 }
 
 .footer-column.latest-blog-posts a:hover::after {
-  transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF6B6B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF6B6B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler {
-  border-color: #FF6B6B;
+	border-color: #ff6b6b;
 }
 
-#navbarNavDropdown{
-  text-align: right;
+#navbarNavDropdown {
+	text-align: right;
 }
 
 // *********************************************************************** mobile styling ********************************************************
 
-// ag: navbar 
+// ag: navbar
 @media (max-width: 1024px) {
-  img.navbar-brand-img{
-    height: 3rem;
-  }
+	img.navbar-brand-img {
+		height: 3rem;
+	}
 
-  span.site-title{
-    font-size: 1.15rem;
-  }
+	span.site-title {
+		font-size: 1.15rem;
+	}
 
-  .footer-container{
-    flex-wrap: inherit;
-  }
+	.footer-container {
+		flex-wrap: inherit;
+	}
 
-  .footer-column{
-    margin: 0;
-  }
+	.footer-column {
+		margin: 0;
+	}
 
-  .footer-links{
-    padding: 0;
-  }
+	.footer-links {
+		padding: 0;
+	}
 
-  div#navbarNavDropdown > ul{
-    background-color: #f2f2f2;
-    width: 40%;
-    border-radius: 5px;
-    padding-bottom: .5rem;
-    li{
-      a{
-        text-shadow: 1px 1px 2px $secondary;
-      }
-    }
-  }
+	div#navbarNavDropdown > ul {
+		background-color: #f2f2f2;
+		width: 30%;
+		border-radius: 5px;
+		padding-bottom: 0.5rem;
+		li {
+			a {
+				text-shadow: 1px 1px 2px $secondary;
+			}
+		}
+	}
 }
