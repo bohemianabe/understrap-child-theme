@@ -15599,6 +15599,9 @@ body.page-id-327 a.understrap-read-more-link {
 body.page-id-327 a.understrap-read-more-link:hover {
   background-color: #ff5252;
 }
+body.page-id-327 .img-fluid {
+  max-height: 15rem;
+}
 @media (max-width: 768px) {
   body.page-id-327 main.site-main > div.container > div.row {
     flex-direction: column-reverse;

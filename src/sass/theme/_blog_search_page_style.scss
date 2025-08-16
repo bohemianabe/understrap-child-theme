@@ -1,26 +1,27 @@
+body.page-id-327 {
+	a.understrap-read-more-link {
+		background-color: $accent;
+		border: $accent;
+		&:hover {
+			background-color: darken($accent, 5%);
+		}
+	}
 
-body.page-id-327{
-    a.understrap-read-more-link{
-        background-color: $accent;
-        border: $accent;
-        &:hover{
-            background-color: darken($accent, 5%);
-        }
-    } 
-    
-    @media(max-width: 768px){
-        main.site-main > div.container > div.row{
-            flex-direction: column-reverse;
-        }
+	.img-fluid {
+		max-height: 15rem;
+	}
 
-        div#navbarNavDropdown > ul{
-            li{
-                a{
-                    text-shadow: none;
-                }
-            }
-        }
-    }
+	@media (max-width: 768px) {
+		main.site-main > div.container > div.row {
+			flex-direction: column-reverse;
+		}
 
-    
+		div#navbarNavDropdown > ul {
+			li {
+				a {
+					text-shadow: none;
+				}
+			}
+		}
+	}
 }
